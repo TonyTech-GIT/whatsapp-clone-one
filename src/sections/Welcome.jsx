@@ -2,7 +2,7 @@ import { smallIcon, largeIcon, greenRightArrow } from "../assets";
 
 const Welcome = () => {
   return (
-    <section className="bg-gradient-to-bl from-[#25D366] to-yellow-300 h-[80vh] w-[20%] mt-[3rem] rounded-[50px] relative overflow-hidden">
+    <section className="bg-gradient-to-bl from-[#25D366] to-yellow-300 md:h-[80vh] h-screen md:w-[20%] w-[80%] mt-[3rem] rounded-[50px] relative overflow-hidden">
       <img
         className="absolute -bottom-11 -left-9 w-[100%] opacity-35"
         src={largeIcon}
