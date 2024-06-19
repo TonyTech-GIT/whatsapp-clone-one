@@ -1,16 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import { Welcome, Home, Chat } from "./sections";
 
 const App = () => {
   return (
-    <section>
-      <section className="flex justify-center items-center">
-        <Welcome />
-      </section>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Welcome />} />
 
-      <Home />
+        <Route path="/home" element={<Home />} />
 
-      <Chat />
-    </section>
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
+    </Router>
   );
 };
 
