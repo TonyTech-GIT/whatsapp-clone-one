@@ -9,6 +9,9 @@ export default {
       backgroundImage: {
         'customeGradientOne' : 'linear-gradient(to bottom Left, #25D366 , #fde047 )',
         'whatsappBg' : "url('/src/assets/whatsapp-icon(96).png')"
+      },
+      borderRadius : {
+        'customOne' : '50px 50px 0 0 / 50px 50px 100px 100px'
       }
     },
   },
