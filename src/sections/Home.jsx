@@ -1,5 +1,11 @@
 import React from "react";
-import { greenWhatsappIcon, gridMenu, groupIcon, searchIcon } from "../assets";
+import {
+  greenWhatsappIcon,
+  gridMenu,
+  groupIcon,
+  searchIcon,
+  userIcon,
+} from "../assets";
 
 import { homeNavLinks } from "../constants";
 import HomeNavLinks from "../components/HomeNavLinks";
@@ -40,6 +46,23 @@ const Home = () => {
 
             <img src={searchIcon} alt="search-icon" className="w-[7%] h-[5%]" />
           </div>
+        </div>
+
+        <div className="flex justify-between items-center mx-4 pt-5 border-b-2 pb-2">
+          <div className="flex items-center">
+            <div className="bg-slate-300 w-fit rounded-full p-1">
+              <img src={userIcon} alt="user-icon" />
+            </div>
+
+            <div className="ml-2">
+              <p className="text-sm font-bold">Lorem, ipsum.</p>
+              <p className="text-[.6rem] text-slate-400">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+
+          <p className="text-[.6rem] text-slate-400">9:45</p>
         </div>
       </section>
     </section>

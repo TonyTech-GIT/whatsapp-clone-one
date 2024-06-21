@@ -4,3 +4,7 @@ export const homeNavLinks = [
     {href: "#", name: "Calls"},
 
 ]
+
+export const homeDetailsLayout = [
+    
+]
