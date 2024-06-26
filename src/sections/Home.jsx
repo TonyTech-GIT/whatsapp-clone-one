@@ -5,10 +5,13 @@ import {
   groupIcon,
   searchIcon,
   userIcon,
+  whiteChatIcon,
+  whiteInstaIcon,
 } from "../assets";
 
 import { homeNavLinks } from "../constants";
 import HomeNavLinks from "../components/HomeNavLinks";
+import HomeChatBox from "../components/HomeChatBox";
 
 const Home = () => {
   return (
@@ -48,21 +51,25 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center mx-4 pt-5 border-b-2 pb-2">
-          <div className="flex items-center">
-            <div className="bg-slate-300 w-fit rounded-full p-1">
-              <img src={userIcon} alt="user-icon" />
-            </div>
+        <HomeChatBox />
+        <HomeChatBox />
+        <HomeChatBox />
+        <HomeChatBox time="12:45" borderBottom="none" />
 
-            <div className="ml-2">
-              <p className="text-sm font-bold">Lorem, ipsum.</p>
-              <p className="text-[.6rem] text-slate-400">
-                Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-          </div>
+        <div className="bg-gradient-to-tr from-[#25D366] to-yellow-300 w-[10%] p-1 rounded-full absolute right-[5rem] bottom-[2rem]">
+          <img
+            className="max-w-full"
+            src={whiteInstaIcon}
+            alt="white-insta-icon"
+          />
+        </div>
 
-          <p className="text-[.6rem] text-slate-400">9:45</p>
+        <div className="bg-gradient-to-tr from-[#25D366] to-yellow-300 h-[55px] w-[20%] p-2 rounded-full absolute right-[1.5rem] bottom-[2.8rem] flex justify-center items-center ">
+          <img
+            className="max-w-full"
+            src={whiteChatIcon}
+            alt="white-insta-icon"
+          />
         </div>
       </section>
     </section>

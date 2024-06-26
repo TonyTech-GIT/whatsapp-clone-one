@@ -8,6 +8,8 @@ import groupIcon from './group-icon.png'
 import callIcon from './call-icon.png'
 import userIcon from './user-icon.png'
 import videoCam from './videoCam-icon.png'
+import whiteInstaIcon from './white-insta-icon.png'
+import whiteChatIcon from './white-chat-icon.png';
 
 
 export {
@@ -20,5 +22,7 @@ export {
     groupIcon,
     callIcon,
     userIcon,
-    videoCam
+    videoCam,
+    whiteInstaIcon,
+    whiteChatIcon
 }
